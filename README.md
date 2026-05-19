@@ -191,7 +191,9 @@ available at: `http://127.0.0.1:8000/`
 
 ---
 
-## Testing with Postman (Sample API requests : Healthcare_API.postman_collection/json attached)
+## Testing with Postman 
+(Sample API request template given in repository : Healthcare_API.postman_collection.json attached 
+=> Open Postman=>Go to Files=>Import the postman collection file and send requests from the collection
 
 ### Step 1: Register a User
 ```
