@@ -319,14 +319,13 @@ POST http://127.0.0.1:8000/api/mappings/
 ```
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/c5da9bb4-717c-4b12-86e3-b79815878be4" />
 
-### Step 6: Delete Doctor For Patient
+### Step 6: Get Doctor for patient by patient ID
 ```
 POST http://127.0.0.1:8000/api/mappings/patient_id/
 ```
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/69deed01-708d-48d8-9e14-588c93706e6f" />
 
-### Step 6:Get Doctor For Patient by mapping Id
-```
+### Step 6: Delete Doctor For Patient
 POST http://127.0.0.1:8000/api/mappings/mapping_id/
 ```
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/b00e24d6-ffe3-4275-af74-62d3c38f83ad" />
