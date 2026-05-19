@@ -327,4 +327,4 @@ POST http://127.0.0.1:8000/api/mappings/patient_id/
 ```
 POST http://127.0.0.1:8000/api/mappings/mapping_id/
 ```
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/b00e24d6-ffe3-4275-af74-62d3c38f83ad" />
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/b00e24d6-ffe3-4275-af74-62d3c38f83ad" />
