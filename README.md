@@ -199,11 +199,13 @@ POST http://127.0.0.1:8000/api/auth/register/
 Content-Type: application/json
 
 {
-    "name": "John Doe",
-    "email": "john@example.com",
-    "password": "SecurePass123"
+    "name": "Mehuli Biswas",
+    "email": "mehuli.biswas@gmail.com",
+    "password": "-any password-"
 }
 ```
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/a127c273-d8d0-415a-aeec-38c04d3f06f2" />
+
 
 ### Step 2: Login
 ```
@@ -211,11 +213,14 @@ POST http://127.0.0.1:8000/api/auth/login/
 Content-Type: application/json
 
 {
-    "email": "john@example.com",
-    "password": "SecurePass123"
+    "email": "mehuli.biswas@gmail.com",
+    "password": "-any password-"
 }
 ```
 Copy the `access` token from the response.
+<img width="600" height="505" alt="image" src="https://github.com/user-attachments/assets/3c99d874-fe87-47f6-8542-0260835f9932" />
+
+
 
 ### Step 3: Use JWT Token
 For all authenticated endpoints, add this header:
@@ -238,6 +243,45 @@ Content-Type: application/json
     "medical_history": "Diabetes"
 }
 ```
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/f4546538-8b71-41e3-9458-4ce6de56d600" />
+
+### Step 4: Get All Patients
+```
+POST http://127.0.0.1:8000/api/patients/
+Authorization: Bearer <token>
+Content-Type: application/json
+```
+<img width="500" height="500" alt="Screenshot 2026-05-19 162109" src="https://github.com/user-attachments/assets/110deb72-2e79-440f-b227-3a06e6a82871" />
+
+### Step 4: Get Patient by ID
+```
+POST http://127.0.0.1:8000/api/patients/id/
+Authorization: Bearer <token>
+Content-Type: application/json
+```
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/cd061f78-48cc-4f57-a11b-c74196f779ea" />
+
+### Step 4: Update Patient by ID
+```
+POST http://127.0.0.1:8000/api/patients/id/
+Authorization: Bearer <token>
+Content-Type: application/json
+
+{
+    "address": "35/9 , Salr Lake City , Kolkata-700056",
+    "medical_history": "Hashimotos Tyroiditis"
+}
+```
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/598b60a4-a504-4861-81ec-b3a1570d54ca" />
+
+### Step 4: Delete Patient by ID
+```
+POST http://127.0.0.1:8000/api/patients/id/
+Authorization: Bearer <token>
+Content-Type: application/json
+```
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/d4a7cbe2-4c2f-4c64-8c2d-e26a321ecc54" />
+
 
 ### Step 5: Create a Doctor
 ```
