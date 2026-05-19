@@ -220,13 +220,12 @@ Content-Type: application/json
 Copy the `access` token from the response.
 <img width="600" height="505" alt="image" src="https://github.com/user-attachments/assets/3c99d874-fe87-47f6-8542-0260835f9932" />
 
-
-
 ### Step 3: Use JWT Token
 For all authenticated endpoints, add this header:
 ```
 Authorization: Bearer <your_access_token>
 ```
+## Patient Section <br>
 
 ### Step 4: Create a Patient
 ```
@@ -248,64 +247,84 @@ Content-Type: application/json
 ### Step 4: Get All Patients
 ```
 POST http://127.0.0.1:8000/api/patients/
-Authorization: Bearer <token>
-Content-Type: application/json
 ```
 <img width="500" height="500" alt="Screenshot 2026-05-19 162109" src="https://github.com/user-attachments/assets/110deb72-2e79-440f-b227-3a06e6a82871" />
 
 ### Step 4: Get Patient by ID
 ```
 POST http://127.0.0.1:8000/api/patients/id/
-Authorization: Bearer <token>
-Content-Type: application/json
 ```
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/cd061f78-48cc-4f57-a11b-c74196f779ea" />
 
 ### Step 4: Update Patient by ID
 ```
 POST http://127.0.0.1:8000/api/patients/id/
-Authorization: Bearer <token>
-Content-Type: application/json
-
-{
-    "address": "35/9 , Salr Lake City , Kolkata-700056",
-    "medical_history": "Hashimotos Tyroiditis"
-}
 ```
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/598b60a4-a504-4861-81ec-b3a1570d54ca" />
 
 ### Step 4: Delete Patient by ID
 ```
 POST http://127.0.0.1:8000/api/patients/id/
-Authorization: Bearer <token>
-Content-Type: application/json
 ```
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/d4a7cbe2-4c2f-4c64-8c2d-e26a321ecc54" />
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/d4a7cbe2-4c2f-4c64-8c2d-e26a321ecc54" />
 
+## Doctor Section <br>
 
 ### Step 5: Create a Doctor
 ```
 POST http://127.0.0.1:8000/api/doctors/
 Authorization: Bearer <token>
 Content-Type: application/json
-
-{
-    "name": "Dr. Bob Jones",
-    "specialization": "Endocrinology",
-    "phone": "9123456789",
-    "email": "drjones@hospital.com",
-    "experience_years": 10
-}
 ```
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/d36ca78c-3832-4622-ae03-f773432b61d4" />
 
+### Step 5: Get All Doctors
+```
+POST http://127.0.0.1:8000/api/doctors/
+```
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/506bb874-7b34-4e83-8a95-3600f2c4242c" />
+
+### Step 5: Get Doctor by ID
+```
+POST http://127.0.0.1:8000/api/doctors/id/
+```
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/439a6731-4578-414c-80d6-e5e8af5f951c" />
+
+### Step 5: Update Doctor
+```
+POST http://127.0.0.1:8000/api/doctors/id/
+```
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/ffdb220e-7c4a-4092-adf9-d8dc0d78bdce" />
+
+### Step 5: Update Doctor
+```
+POST http://127.0.0.1:8000/api/doctors/id/
+```
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/4f15e778-d1ed-4a0e-89ae-89916c3a55c1" />
+
+## Patient Doctor Mappings
 ### Step 6: Assign Doctor to Patient
 ```
 POST http://127.0.0.1:8000/api/mappings/
 Authorization: Bearer <token>
 Content-Type: application/json
-
-{
-    "patient": 1,
-    "doctor": 1
-}
 ```
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/7f72dc88-0189-4bce-b727-146eb3494d16" />
+
+### Step 6:Get All Mappings
+```
+POST http://127.0.0.1:8000/api/mappings/
+```
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/c5da9bb4-717c-4b12-86e3-b79815878be4" />
+
+### Step 6:Get Doctor For Patient
+```
+POST http://127.0.0.1:8000/api/mappings/patient_id/
+```
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/69deed01-708d-48d8-9e14-588c93706e6f" />
+
+### Step 6:Get Doctor For Patient
+```
+POST http://127.0.0.1:8000/api/mappings/mapping_id/
+```
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/b00e24d6-ffe3-4275-af74-62d3c38f83ad" />
