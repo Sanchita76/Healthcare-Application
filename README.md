@@ -5,6 +5,27 @@ A complete backend system for a healthcare application using Django, DRF, Postgr
 ---
 
 ## Project Architecture
+### DFD Level-0 :
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/0c47e0e7-6a35-4711-bc94-92ab344e1ce3" />
+
+### DFD Level-1 :
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/5d05a4a5-91bc-499d-8177-5514305112b0" />
+
+### DFD Level-2 (Auth Service) :
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/44f4e3c9-4cbd-41df-954d-a8dffafe94f2" />
+<br> R= Registration , L=Login
+
+### DFD Level-2 (Patient Management):
+<img width="510" height="500" alt="image" src="https://github.com/user-attachments/assets/8c76c9ec-671c-4d02-ae74-c2b2419239e1" />
+
+### DFD Level-2 (Doctor Management) :
+<img width="532" height="627" alt="image" src="https://github.com/user-attachments/assets/754ee88b-b81d-472c-9200-11d43ad08342" />
+
+### DFD Level-2 (Patient : Doctor Mapping) :
+<img width="467" height="630" alt="image" src="https://github.com/user-attachments/assets/dbfc6314-8c9e-4a46-bd3f-acb8c8f4f577" />
+
+                      
+## File Architecture Architecture
 
 ```
 healthcare_backend/
