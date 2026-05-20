@@ -1,6 +1,6 @@
 # About Project
 
-A complete fullstack system for a healthcare application using React,  Django, DRF, PostgreSQL, and JWT authentication.
+A complete backend system for a healthcare application using React,  Django, DRF, PostgreSQL, and JWT authentication.
 
 ---
 
