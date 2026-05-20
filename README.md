@@ -5,6 +5,27 @@ A complete backend system for a healthcare application using Django, DRF, Postgr
 ---
 
 ## Project Architecture
+### DFD Level-0 :
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/0c47e0e7-6a35-4711-bc94-92ab344e1ce3" />
+
+### DFD Level-1 :
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/5d05a4a5-91bc-499d-8177-5514305112b0" />
+
+### DFD Level-2 (Auth Service) :
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/44f4e3c9-4cbd-41df-954d-a8dffafe94f2" />
+<br> R= Registration , L=Login
+
+### DFD Level-2 (Patient Management):
+<img width="510" height="500" alt="image" src="https://github.com/user-attachments/assets/8c76c9ec-671c-4d02-ae74-c2b2419239e1" />
+
+### DFD Level-2 (Doctor Management) :
+<img width="532" height="627" alt="image" src="https://github.com/user-attachments/assets/754ee88b-b81d-472c-9200-11d43ad08342" />
+
+### DFD Level-2 (Patient : Doctor Mapping) :
+<img width="467" height="630" alt="image" src="https://github.com/user-attachments/assets/dbfc6314-8c9e-4a46-bd3f-acb8c8f4f577" />
+
+                      
+## File Architecture Architecture
 
 ```
 healthcare_backend/
@@ -191,7 +212,9 @@ available at: `http://127.0.0.1:8000/`
 
 ---
 
-## Testing with Postman (Sample API requests : Healthcare_API.postman_collection/json attached)
+## Testing with Postman 
+(Sample API request template given in repository : Healthcare_API.postman_collection.json attached 
+=> Open Postman=>Go to Files=>Import the postman collection file and send requests from the collection
 
 ### Step 1: Register a User
 ```
@@ -317,13 +340,13 @@ POST http://127.0.0.1:8000/api/mappings/
 ```
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/c5da9bb4-717c-4b12-86e3-b79815878be4" />
 
-### Step 6:Get Doctor For Patient
+### Step 6: Get Doctor for patient by patient ID
 ```
 POST http://127.0.0.1:8000/api/mappings/patient_id/
 ```
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/69deed01-708d-48d8-9e14-588c93706e6f" />
 
-### Step 6:Get Doctor For Patient
+### Step 6: Delete Doctor For Patient
 ```
 POST http://127.0.0.1:8000/api/mappings/mapping_id/
 ```
