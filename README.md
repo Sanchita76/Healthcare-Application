@@ -1,10 +1,10 @@
-# Healthcare Backend
+# About Project
 
-A complete backend system for a healthcare application using Django, DRF, PostgreSQL, and JWT authentication.
+A complete fullstack system for a healthcare application using React,  Django, DRF, PostgreSQL, and JWT authentication.
 
 ---
 
-## Project Architecture
+## Backend Project Architecture
 ### DFD Level-0 :
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/0c47e0e7-6a35-4711-bc94-92ab344e1ce3" />
 
@@ -25,7 +25,7 @@ A complete backend system for a healthcare application using Django, DRF, Postgr
 <img width="467" height="630" alt="image" src="https://github.com/user-attachments/assets/dbfc6314-8c9e-4a46-bd3f-acb8c8f4f577" />
 
                       
-## File Architecture Architecture
+## Backend File Architecture Architecture
 
 ```
 healthcare_backend/
