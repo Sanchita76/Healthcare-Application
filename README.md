@@ -2,6 +2,7 @@
 
 A complete backend system for a healthcare application using React,  Django, DRF, PostgreSQL, and JWT authentication.
 
+Deployed backend link : https://mediapp-backend-32in.onrender.com/api/auth/register/
 ---
 
 ## Backend Project Architecture
